@@ -9,8 +9,7 @@
 #import "MenuViewCell.h"
 
 @interface MenuViewCell()
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
+
 
 @end
 

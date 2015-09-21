@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0018238A1BB0151C00FCE587 /* PathAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001823881BB0151C00FCE587 /* PathAnimationController.m */; settings = {ASSET_TAGS = (); }; };
+		0018238D1BB0172200FCE587 /* PathAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0018238C1BB0172200FCE587 /* PathAnimationController.xib */; settings = {ASSET_TAGS = (); }; };
+		001823901BB0177900FCE587 /* PathDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018238F1BB0177900FCE587 /* PathDrawView.m */; settings = {ASSET_TAGS = (); }; };
 		009987D11BAF0EDB00FB551E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 009987D01BAF0EDB00FB551E /* main.m */; };
 		009987D41BAF0EDB00FB551E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 009987D31BAF0EDB00FB551E /* AppDelegate.m */; };
 		009987DA1BAF0EDB00FB551E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009987D81BAF0EDB00FB551E /* Main.storyboard */; };
@@ -36,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		001823871BB0151C00FCE587 /* PathAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathAnimationController.h; sourceTree = "<group>"; };
+		001823881BB0151C00FCE587 /* PathAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathAnimationController.m; sourceTree = "<group>"; };
+		0018238C1BB0172200FCE587 /* PathAnimationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PathAnimationController.xib; sourceTree = "<group>"; };
+		0018238E1BB0177900FCE587 /* PathDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathDrawView.h; sourceTree = "<group>"; };
+		0018238F1BB0177900FCE587 /* PathDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathDrawView.m; sourceTree = "<group>"; };
 		009987CC1BAF0EDB00FB551E /* iOSAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		009987D01BAF0EDB00FB551E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		009987D21BAF0EDB00FB551E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +89,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		001823861BB014E500FCE587 /* 路径动画 */ = {
+			isa = PBXGroup;
+			children = (
+				001823871BB0151C00FCE587 /* PathAnimationController.h */,
+				001823881BB0151C00FCE587 /* PathAnimationController.m */,
+				0018238C1BB0172200FCE587 /* PathAnimationController.xib */,
+				0018238E1BB0177900FCE587 /* PathDrawView.h */,
+				0018238F1BB0177900FCE587 /* PathDrawView.m */,
+			);
+			path = "路径动画";
+			sourceTree = "<group>";
+		};
 		009987C31BAF0EDB00FB551E = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +124,7 @@
 		009987CE1BAF0EDB00FB551E /* iOSAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				001823861BB014E500FCE587 /* 路径动画 */,
 				009987D21BAF0EDB00FB551E /* AppDelegate.h */,
 				009987D31BAF0EDB00FB551E /* AppDelegate.m */,
 				009988021BAF1D1500FB551E /* MenuViewController.h */,
@@ -249,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				009987DF1BAF0EDB00FB551E /* LaunchScreen.storyboard in Resources */,
+				0018238D1BB0172200FCE587 /* PathAnimationController.xib in Resources */,
 				009987DC1BAF0EDB00FB551E /* Assets.xcassets in Resources */,
 				009987DA1BAF0EDB00FB551E /* Main.storyboard in Resources */,
 			);
@@ -277,8 +299,10 @@
 			files = (
 				009987D41BAF0EDB00FB551E /* AppDelegate.m in Sources */,
 				009988071BAF1FE300FB551E /* MenuViewCell.m in Sources */,
+				0018238A1BB0151C00FCE587 /* PathAnimationController.m in Sources */,
 				009988041BAF1D1500FB551E /* MenuViewController.m in Sources */,
 				009987D11BAF0EDB00FB551E /* main.m in Sources */,
+				001823901BB0177900FCE587 /* PathDrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +526,7 @@
 				009987FB1BAF0EDC00FB551E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		009987FC1BAF0EDC00FB551E /* Build configuration list for PBXNativeTarget "iOSAnimationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +535,7 @@
 				009987FE1BAF0EDC00FB551E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		009987FF1BAF0EDC00FB551E /* Build configuration list for PBXNativeTarget "iOSAnimationDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +544,7 @@
 				009988011BAF0EDC00FB551E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
