@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaperFoldingController">
+            <connections>
+                <outlet property="bottomPartImageView" destination="yAI-HL-BI1" id="fEr-ol-3VW"/>
+                <outlet property="dragView" destination="dAG-WS-lgm" id="SfF-Ac-BFD"/>
+                <outlet property="topPartImageView" destination="gdu-R4-J1a" id="lLV-8W-xjw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" translatesAutoresizingMaskIntoConstraints="NO" id="yAI-HL-BI1" userLabel="下班部分">
+                    <rect key="frame" x="200" y="250" width="200" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="2Vu-OQ-WRd"/>
+                        <constraint firstAttribute="width" constant="200" id="jZw-Py-zYT"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" translatesAutoresizingMaskIntoConstraints="NO" id="gdu-R4-J1a" userLabel="上半部分">
+                    <rect key="frame" x="200" y="250" width="200" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Rca-eS-l3X"/>
+                        <constraint firstAttribute="height" constant="100" id="szu-NI-q4E"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAG-WS-lgm">
+                    <rect key="frame" x="200" y="200" width="200" height="200"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="B4Q-3s-GwM"/>
+                        <constraint firstAttribute="width" constant="200" id="tdR-3S-qyv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yAI-HL-BI1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7nN-Y3-cjc"/>
+                <constraint firstItem="dAG-WS-lgm" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="OL2-Lg-epr"/>
+                <constraint firstItem="yAI-HL-BI1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Pq6-7A-7Aw"/>
+                <constraint firstItem="gdu-R4-J1a" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cOx-2l-dF9"/>
+                <constraint firstItem="gdu-R4-J1a" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="moq-9C-U1e"/>
+                <constraint firstItem="dAG-WS-lgm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="om5-7D-baO"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="paper" width="200" height="200"/>
+    </resources>
+</document>

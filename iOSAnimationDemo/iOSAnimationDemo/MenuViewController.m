@@ -12,6 +12,7 @@
 
 #define kItemKeyTitle @"title"
 #define kItemKeyDetailTitle @"detailTitle"
+#define kItemKeyClassName @"className"
 
 @interface MenuViewController ()
 /** 数据 */
@@ -26,7 +27,13 @@
         _items = @[
                    @{
                        kItemKeyTitle : @"路径动画",
-                       kItemKeyDetailTitle : @"根据绘图的路径生成动画。"
+                       kItemKeyDetailTitle : @"根据绘图的路径生成动画。",
+                       kItemKeyClassName : @"PathAnimation"
+                    },
+                   @{
+                       kItemKeyTitle : @"折纸效果动画",
+                       kItemKeyDetailTitle : @"图片的一半可以对折翻转，另一半图片会有阴影效果。",
+                       kItemKeyClassName : @"PaperFolding"
                     }
                  ];
     }
@@ -65,8 +72,19 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    PathAnimationController *patnVc = [[PathAnimationController alloc] init];
-    [self.navigationController pushViewController:patnVc animated:YES];
+    NSDictionary *item = self.items[indexPath.row];
+    NSString *className = [item[kItemKeyClassName] stringByAppendingString:@"Controller"];
+    
+    if (NSClassFromString(className)) {
+        Class aClass = NSClassFromString(className);
+        id instance = [[aClass alloc] init];
+        
+        if ([instance isKindOfClass:[UIViewController class]]) {
+            [(UIViewController *)instance setTitle:item[kItemKeyTitle]];
+            [self.navigationController pushViewController:(UIViewController *)instance animated:YES];
+        }
+    }
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 
