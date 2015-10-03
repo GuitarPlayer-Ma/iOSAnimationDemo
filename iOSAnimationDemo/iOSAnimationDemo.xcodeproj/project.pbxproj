@@ -13,6 +13,7 @@
 		001823D41BB06F6F00FCE587 /* PaperFoldingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001823D21BB06F6F00FCE587 /* PaperFoldingController.m */; settings = {ASSET_TAGS = (); }; };
 		001823D51BB06F6F00FCE587 /* PaperFoldingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001823D31BB06F6F00FCE587 /* PaperFoldingController.xib */; settings = {ASSET_TAGS = (); }; };
 		0070E9B11BBF81150008C8D3 /* HomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0070E9B01BBF81150008C8D3 /* HomePageController.m */; settings = {ASSET_TAGS = (); }; };
+		0070E9B31BBFC8840008C8D3 /* HomePageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0070E9B21BBFC8840008C8D3 /* HomePageController.xib */; settings = {ASSET_TAGS = (); }; };
 		009987D11BAF0EDB00FB551E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 009987D01BAF0EDB00FB551E /* main.m */; };
 		009987D41BAF0EDB00FB551E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 009987D31BAF0EDB00FB551E /* AppDelegate.m */; };
 		009987DA1BAF0EDB00FB551E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009987D81BAF0EDB00FB551E /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		001823D31BB06F6F00FCE587 /* PaperFoldingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaperFoldingController.xib; sourceTree = "<group>"; };
 		0070E9AF1BBF81150008C8D3 /* HomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageController.h; sourceTree = "<group>"; };
 		0070E9B01BBF81150008C8D3 /* HomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageController.m; sourceTree = "<group>"; };
+		0070E9B21BBFC8840008C8D3 /* HomePageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageController.xib; sourceTree = "<group>"; };
 		009987CC1BAF0EDB00FB551E /* iOSAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		009987D01BAF0EDB00FB551E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		009987D21BAF0EDB00FB551E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				0070E9AF1BBF81150008C8D3 /* HomePageController.h */,
 				0070E9B01BBF81150008C8D3 /* HomePageController.m */,
+				0070E9B21BBFC8840008C8D3 /* HomePageController.xib */,
 			);
 			path = "个人主页动画";
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				009987DC1BAF0EDB00FB551E /* Assets.xcassets in Resources */,
 				009987DA1BAF0EDB00FB551E /* Main.storyboard in Resources */,
 				001823D51BB06F6F00FCE587 /* PaperFoldingController.xib in Resources */,
+				0070E9B31BBFC8840008C8D3 /* HomePageController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

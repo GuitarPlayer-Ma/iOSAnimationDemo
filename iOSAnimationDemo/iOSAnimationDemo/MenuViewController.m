@@ -52,6 +52,11 @@
     // 添加手势
     UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
     [self.view addGestureRecognizer:longPress];
+    
+    // 清空导航条的图片
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    // 导航条的分隔线也去掉
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
 }
 
 #pragma mark - Table view data source
