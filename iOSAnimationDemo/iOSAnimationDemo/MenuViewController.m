@@ -34,7 +34,12 @@
                        kItemKeyTitle : @"折纸效果动画",
                        kItemKeyDetailTitle : @"图片的一半可以对折翻转，另一半图片会有阴影效果。",
                        kItemKeyClassName : @"PaperFolding"
-                    }
+                    },
+                   @{
+                       kItemKeyTitle : @"个人主页动画",
+                       kItemKeyDetailTitle : @"往下拖动和往上拖动试试吧。",
+                       kItemKeyClassName : @"HomePage"
+                       }
                  ] mutableCopy];
     }
     return _items;
@@ -43,6 +48,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"与手势相关的动画效果";
     // 添加手势
     UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
     [self.view addGestureRecognizer:longPress];
@@ -121,10 +127,10 @@
             [self.view addSubview:snapshot];
             
             snapshot.alpha = 0.0;
-            __block CGPoint center = cell.center;
+            CGPoint center = cell.center;
+            snapshot.center = center;
             [UIView animateWithDuration:0.25 animations:^{
-                snapshot.alpha = 1.0;
-                snapshot.center = center;
+                snapshot.alpha = 0.98;
                 snapshot.transform = CGAffineTransformMakeScale(1.05, 1.05);
                 cell.alpha = 0.0;
             } completion:^(BOOL finished) {
@@ -166,6 +172,8 @@
             }];
             break;
         }
+        default:
+            break;
     }
 }
 

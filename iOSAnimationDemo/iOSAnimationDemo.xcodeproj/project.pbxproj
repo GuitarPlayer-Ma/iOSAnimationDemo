@@ -12,6 +12,7 @@
 		001823901BB0177900FCE587 /* PathDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018238F1BB0177900FCE587 /* PathDrawView.m */; settings = {ASSET_TAGS = (); }; };
 		001823D41BB06F6F00FCE587 /* PaperFoldingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001823D21BB06F6F00FCE587 /* PaperFoldingController.m */; settings = {ASSET_TAGS = (); }; };
 		001823D51BB06F6F00FCE587 /* PaperFoldingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001823D31BB06F6F00FCE587 /* PaperFoldingController.xib */; settings = {ASSET_TAGS = (); }; };
+		0070E9B11BBF81150008C8D3 /* HomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0070E9B01BBF81150008C8D3 /* HomePageController.m */; settings = {ASSET_TAGS = (); }; };
 		009987D11BAF0EDB00FB551E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 009987D01BAF0EDB00FB551E /* main.m */; };
 		009987D41BAF0EDB00FB551E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 009987D31BAF0EDB00FB551E /* AppDelegate.m */; };
 		009987DA1BAF0EDB00FB551E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009987D81BAF0EDB00FB551E /* Main.storyboard */; };
@@ -49,6 +50,8 @@
 		001823D11BB06F6F00FCE587 /* PaperFoldingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperFoldingController.h; sourceTree = "<group>"; };
 		001823D21BB06F6F00FCE587 /* PaperFoldingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperFoldingController.m; sourceTree = "<group>"; };
 		001823D31BB06F6F00FCE587 /* PaperFoldingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaperFoldingController.xib; sourceTree = "<group>"; };
+		0070E9AF1BBF81150008C8D3 /* HomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageController.h; sourceTree = "<group>"; };
+		0070E9B01BBF81150008C8D3 /* HomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageController.m; sourceTree = "<group>"; };
 		009987CC1BAF0EDB00FB551E /* iOSAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		009987D01BAF0EDB00FB551E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		009987D21BAF0EDB00FB551E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,6 +119,15 @@
 			path = "折纸动画";
 			sourceTree = "<group>";
 		};
+		0070E9AE1BBF7EC50008C8D3 /* 个人主页动画 */ = {
+			isa = PBXGroup;
+			children = (
+				0070E9AF1BBF81150008C8D3 /* HomePageController.h */,
+				0070E9B01BBF81150008C8D3 /* HomePageController.m */,
+			);
+			path = "个人主页动画";
+			sourceTree = "<group>";
+		};
 		009987C31BAF0EDB00FB551E = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +153,7 @@
 			children = (
 				001823861BB014E500FCE587 /* 路径动画 */,
 				001823D01BB06EBC00FCE587 /* 折纸动画 */,
+				0070E9AE1BBF7EC50008C8D3 /* 个人主页动画 */,
 				009987D21BAF0EDB00FB551E /* AppDelegate.h */,
 				009987D31BAF0EDB00FB551E /* AppDelegate.m */,
 				009988021BAF1D1500FB551E /* MenuViewController.h */,
@@ -315,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				009987D41BAF0EDB00FB551E /* AppDelegate.m in Sources */,
+				0070E9B11BBF81150008C8D3 /* HomePageController.m in Sources */,
 				009988071BAF1FE300FB551E /* MenuViewCell.m in Sources */,
 				001823D41BB06F6F00FCE587 /* PaperFoldingController.m in Sources */,
 				0018238A1BB0151C00FCE587 /* PathAnimationController.m in Sources */,
