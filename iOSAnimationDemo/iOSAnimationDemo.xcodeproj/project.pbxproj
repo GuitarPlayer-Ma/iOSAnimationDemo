@@ -12,6 +12,7 @@
 		001823901BB0177900FCE587 /* PathDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018238F1BB0177900FCE587 /* PathDrawView.m */; settings = {ASSET_TAGS = (); }; };
 		001823D41BB06F6F00FCE587 /* PaperFoldingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001823D21BB06F6F00FCE587 /* PaperFoldingController.m */; settings = {ASSET_TAGS = (); }; };
 		001823D51BB06F6F00FCE587 /* PaperFoldingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001823D31BB06F6F00FCE587 /* PaperFoldingController.xib */; settings = {ASSET_TAGS = (); }; };
+		00300BC51BC20F6F0019E97B /* DrawerAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00300BC41BC20F6F0019E97B /* DrawerAnimationController.m */; settings = {ASSET_TAGS = (); }; };
 		0070E9B11BBF81150008C8D3 /* HomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0070E9B01BBF81150008C8D3 /* HomePageController.m */; settings = {ASSET_TAGS = (); }; };
 		0070E9B31BBFC8840008C8D3 /* HomePageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0070E9B21BBFC8840008C8D3 /* HomePageController.xib */; settings = {ASSET_TAGS = (); }; };
 		009987D11BAF0EDB00FB551E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 009987D01BAF0EDB00FB551E /* main.m */; };
@@ -51,6 +52,8 @@
 		001823D11BB06F6F00FCE587 /* PaperFoldingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperFoldingController.h; sourceTree = "<group>"; };
 		001823D21BB06F6F00FCE587 /* PaperFoldingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperFoldingController.m; sourceTree = "<group>"; };
 		001823D31BB06F6F00FCE587 /* PaperFoldingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaperFoldingController.xib; sourceTree = "<group>"; };
+		00300BC31BC20F6F0019E97B /* DrawerAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerAnimationController.h; sourceTree = "<group>"; };
+		00300BC41BC20F6F0019E97B /* DrawerAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerAnimationController.m; sourceTree = "<group>"; };
 		0070E9AF1BBF81150008C8D3 /* HomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageController.h; sourceTree = "<group>"; };
 		0070E9B01BBF81150008C8D3 /* HomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageController.m; sourceTree = "<group>"; };
 		0070E9B21BBFC8840008C8D3 /* HomePageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageController.xib; sourceTree = "<group>"; };
@@ -121,6 +124,15 @@
 			path = "折纸动画";
 			sourceTree = "<group>";
 		};
+		00300BC21BC20EB40019E97B /* 抽屉动画 */ = {
+			isa = PBXGroup;
+			children = (
+				00300BC31BC20F6F0019E97B /* DrawerAnimationController.h */,
+				00300BC41BC20F6F0019E97B /* DrawerAnimationController.m */,
+			);
+			path = "抽屉动画";
+			sourceTree = "<group>";
+		};
 		0070E9AE1BBF7EC50008C8D3 /* 个人主页动画 */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +169,7 @@
 				001823861BB014E500FCE587 /* 路径动画 */,
 				001823D01BB06EBC00FCE587 /* 折纸动画 */,
 				0070E9AE1BBF7EC50008C8D3 /* 个人主页动画 */,
+				00300BC21BC20EB40019E97B /* 抽屉动画 */,
 				009987D21BAF0EDB00FB551E /* AppDelegate.h */,
 				009987D31BAF0EDB00FB551E /* AppDelegate.m */,
 				009988021BAF1D1500FB551E /* MenuViewController.h */,
@@ -338,6 +351,7 @@
 				0018238A1BB0151C00FCE587 /* PathAnimationController.m in Sources */,
 				009988041BAF1D1500FB551E /* MenuViewController.m in Sources */,
 				009987D11BAF0EDB00FB551E /* main.m in Sources */,
+				00300BC51BC20F6F0019E97B /* DrawerAnimationController.m in Sources */,
 				001823901BB0177900FCE587 /* PathDrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

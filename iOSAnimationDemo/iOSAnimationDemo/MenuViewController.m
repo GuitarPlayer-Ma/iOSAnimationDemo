@@ -39,7 +39,12 @@
                        kItemKeyTitle : @"个人主页动画",
                        kItemKeyDetailTitle : @"往下拖动和往上拖动试试吧。",
                        kItemKeyClassName : @"HomePage"
-                       }
+                    },
+                   @{
+                       kItemKeyTitle : @"抽屉效果动画",
+                       kItemKeyDetailTitle : @"这里实现了最简单的抽屉效果，左右都可以滑动。",
+                       kItemKeyClassName : @"DrawerAnimation"
+                    }
                  ] mutableCopy];
     }
     return _items;
